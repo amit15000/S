@@ -1,5 +1,9 @@
 f=open("d:\\amit.txt","r")
-line1=f.readline()
-print(line1)
-line2=f.readline()
-print(line2)
+line=''
+size=0
+while line:
+    line=f.readline()
+    l=len(line)
+    size=size+l
+    print(line)
+print("Total size of file is :", size)
